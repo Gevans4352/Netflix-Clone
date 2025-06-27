@@ -1,0 +1,444 @@
+.navBar{
+   color: rgba(5, 5, 5, 0.884);
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1000;
+   background: transparent;
+   transition: background-color 0.6s ease-in-out;
+   height: 70px;
+   
+   &.scrolled{
+     background-color: rgb(0, 0, 0);
+   }
+ 
+   .container{
+     padding: 0px 50px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: 70px;
+
+     .kids{
+      color: white;
+      cursor: pointer;
+     }
+     .left{
+         display: flex;
+         align-items: center;
+
+         a{
+          text-decoration: none;
+         }
+
+         img{
+           height: 35px;  
+           margin-right: 40px;
+           cursor: pointer;
+         }
+         span{
+             margin-right: 25px;
+             cursor: pointer;
+             color: rgba(216, 213, 213, 0.37);
+             text-decoration: none;
+              transition: color 0.3s ease;
+             &:hover{
+               color: darkgray;
+             }
+         }
+         .navLink {
+             text-decoration: none;
+             color: inherit;
+             
+             &:hover {
+                 opacity: 0.8;
+             }
+             
+             span {
+                 margin-right: 25px;
+                 cursor: pointer;
+             }
+         }
+     }
+        .right{
+         display: flex;
+         align-items: center;
+         gap: 15px;
+        //  flex-wrap: wrap;
+         position: relative; 
+
+         .search-container {
+         height: 70px;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+          input {
+            padding: 0.5rem 1.0rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: #fefefe;
+            font-size: 15px;
+            width: 200px; 
+            margin-right: .5rem;
+            transition: all 0.3s ease;
+            
+          }
+          
+          input:focus {
+            border-color:#3d3d41;
+            box-shadow:0 0 12px rgba(70, 67, 75, 0.6);
+            outline: none;
+          }
+
+          .btn {
+            background-color: #201f20;
+            border-radius: 5px;
+            padding: 0.3rem;
+            font-size: 1rem;
+            font-weight: 100;
+            color: #fefefe;
+            box-shadow:0 2px 8px rgba(0, 0, 0, 0.1);
+            transition:all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+            flex-shrink: 0;
+          }
+
+          
+          .searchResults {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            max-height: 300px;
+            overflow-y: auto;
+            z-index: 1001;
+            margin-top: 5px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+            .search-result-item {
+              padding: 12px 16px;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+              cursor: pointer;
+              transition: background-color 0.2s ease;
+
+              &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+              }
+
+              &:last-child {
+                border-bottom: none;
+              }
+
+              span {
+                display: block;
+                color: #fff;
+                font-size: 14px;
+                margin-bottom: 2px;
+                cursor: pointer;
+
+                &:first-child {
+                  font-weight: 500;
+                  font-size: 15px;
+                }
+
+                &:nth-child(2) {
+                  color: #ccc;
+                  font-size: 12px;
+                }
+
+                &:last-child {
+                  color: #999;
+                  font-size: 11px;
+                }
+              }
+            }
+          }
+
+          
+          .emptySearch {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 16px;
+            z-index: 1001;
+            margin-top: 5px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+            p {
+              color: #ccc;
+              font-size: 14px;
+              line-height: 1.4;
+              margin: 0;
+            }
+          }
+        }
+
+        .icon{
+             margin: 0px 20px;
+             cursor: pointer;
+             color: white;
+        }
+        .options{
+          margin-left: 20px;
+        }
+        .iconic{
+             margin: 0px 20px;
+             cursor: pointer;
+             color: white;
+            transition: transform 0.3s ease;
+            
+            &:hover {
+                transform: rotate(180deg);
+                
+                + .options {
+                    display: block;
+                     margin-left: 50px;
+                }
+          }
+        }
+         img{
+             border-radius: 5px;
+             object-fit: cover;
+             height: 25px;
+             width: 30px;
+             cursor: pointer;
+         }
+
+         
+         .profile{
+             .options{
+               display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.418);
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            min-width: 200px;
+            z-index: 1000;
+            
+            &:hover {
+                display: block;
+            }
+                 
+                 .navLink {
+                     text-decoration: none;
+                     color: inherit;
+                     
+                     &:hover {
+                         opacity: 0.8;
+                     }
+                 }
+                 
+                 span{
+                display: block;
+                padding: 8px 12px;
+                cursor: pointer;
+                color: #fffcfc;
+                
+                
+                &:hover {
+                    background-color: #7a7878;
+                    text-decoration: underline;
+                }
+                 }
+             }
+             &:hover{
+                 .options{
+                     display: flex;
+                     flex-direction: column;
+                     position: absolute;
+                     right: 50px;
+                     top: 50px;
+                     z-index: 999;
+                  }
+             
+                  .collectibles{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    color: gray;
+                    cursor: pointer;
+
+                     &:hover {
+                    background-color: #7a7878;
+                }
+                  }
+                  .iconOne{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    color: gray;
+                    cursor: pointer;
+
+                     &:hover {
+                    background-color: #7a7878;
+                }
+                  }
+                  .iconTwo{
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  color: gray;
+                  cursor: pointer;
+
+                   &:hover {
+                    background-color: #7a7878;
+                }
+                  }
+                  .iconThree{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    color: gray;
+                    cursor: pointer;
+                    border-bottom: 1px solid gray;
+
+                     &:hover {
+                    background-color: #7a7878;
+                }
+                  }
+            }
+          }
+        }
+
+             .picOne{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    color: gray;
+                    cursor: pointer;
+                    
+                    &:hover{
+                      text-decoration: underline;
+                      background-color: transparent;
+                    }
+                  }
+  .search {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+    .MuiSvgIcon-root {
+      color: #888;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+}
+
+@media (max-width: 1024px) {
+  .navBar {
+    .container {
+      padding: 0 30px;
+
+      .left {
+        span,
+        .navLink span {
+          margin-right: 15px;
+        }
+
+        img {
+          margin-right: 20px;
+        }
+      }
+
+      .right {
+        gap: 10px;
+
+        .search-container input {
+          width: 150px;
+        }
+
+        .icon,
+        .iconic {
+          margin: 0 10px;
+        }
+
+        img {
+          height: 22px;
+          width: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    .container {
+      flex-direction: column;
+      height: auto;
+      padding: 10px 20px;
+
+      .left,
+      .right {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 5px;
+      }
+
+      .left img {
+        height: 30px;
+        margin-right: 10px;
+      }
+
+      .right {
+        .search-container input {
+          width: 120px;
+        }
+
+        .profile .options {
+          right: 10px;
+          top: 120%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .navBar {
+    .container {
+      padding: 10px;
+
+      .left span,
+      .navLink span {
+        margin-right: 10px;
+        font-size: 12px;
+      }
+
+      .right {
+        gap: 5px;
+
+        .search-container input {
+          width: 100px;
+        }
+
+        .icon,
+        .iconic {
+          margin: 0 5px;
+        }
+
+        img {
+          height: 20px;
+          width: 24px;
+        }
+      }
+    }
+  }
+}

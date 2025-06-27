@@ -1,0 +1,173 @@
+.mainOpening {
+    width: 230px;
+    height: 259px;
+}
+
+.WeekList{
+    width: 225px;
+    height: 135px;
+    background-color: rgb(31, 30, 30);
+    overflow: hidden;
+
+
+    .mediaweek{
+    position: relative;
+    width: 150%;
+    overflow: hidden;
+
+  }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+   .action {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none; 
+  transition: opacity 0.3s ease;
+
+    video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; 
+  }
+   
+}
+
+    &:hover{
+        width: 300px;
+        height: 350px;
+        transform: scale(1.05)  translateY(-5px);
+        z-index: 999;
+        box-shadow: 1px -4px 13px 2px rgba(32, 32, 32, 0.75);
+        -webkit-box-shadow: 1px -4px 13px 2px rgba(36, 35, 35, 0.75);
+        -moz-box-shadow: 1px -4px 13px 2px rgba(39, 38, 38, 0.75);
+        border-radius: 5px;
+        position: relative;
+    }
+    img{
+        height: 150px;
+    }
+    
+   
+}
+
+ 
+    .weekInfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+        gap: 20px;
+        font-size: 5px;
+        text-align: center;
+    .icons{
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        align-items: center;
+
+        .icon{
+            border: 2px solid whitesmoke;
+            padding: 5px;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+    .itemweekTop{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-style: 5px;
+        color: gray;
+
+       
+    }
+
+    }
+    .iconsjs{
+    font-style: 5px;
+    color: gray;  
+    }
+
+    .limie{
+        font-size: 5px;
+        margin: 0 5px;
+        color: #3d3a3a;
+    }
+    
+    .desc{
+        font-size:14px;
+        margin-bottom: 10px;
+    }
+    .genre{
+        font-size: 14px;
+        color: lightgrey;
+    }
+      .tooltipWrapper {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+    
+    .tooltipText {
+      visibility: hidden;
+      opacity: 0;
+      width: max-content;
+      background-color: #f2f2f3;
+      color: #3d3a3a;
+      text-align: center;
+      padding: 8px;
+      border-radius: 4px;
+      position: absolute;
+      font-size: 20px;
+      bottom: 125%; 
+      left: 50%;
+      transform: translateX(-50%);
+      transition: opacity 0.3s;
+      z-index: 99;
+    }
+    
+    .tooltipText::after {
+      content: '';
+      position: absolute;
+      top: 100%; 
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 7px;
+      border-style: solid;
+      border-color: #f8f9fa transparent transparent transparent;
+    }
+    
+    .tooltipWrapper:hover .tooltipText {
+      visibility: visible;
+      opacity: 1;
+     
+    }
+    
+    .pop {
+      animation: pop 0.3s ease forwards;
+    }
+    
+    @keyframes pop {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+
+
+.limit { padding: 0 1px;
+  font-size: 15px;
+    margin: 0 1px;
+
+}

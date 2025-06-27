@@ -1,0 +1,317 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.login {
+    width: 100vw;
+    height: 100vh;
+    background: 
+    linear-gradient(to bottom, rgba(48, 62, 48, 0.2) 0%, rgba(0, 0, 0, 0.95) 100%),
+    url("netflix.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden; 
+  
+    .top {
+      .wrapper {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  
+        .logo {
+          height: 60px;
+        }
+
+      }
+    }
+  
+    .container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: whitesmoke;
+      text-align: center;
+
+      form{
+        width: 400px;
+        height: 500px;
+        padding: 30px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.774);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h2{
+          text-align: start;
+        }
+
+
+        input{
+            height: 40px;
+            background-color: grey;
+            color: rgba(245, 245, 245, 0.61);
+            border-radius: 5px;
+            padding-left: 10px;
+
+            &::placeholder{
+                color: lightgray;
+            }
+        }
+
+        button{
+            width: 395px;
+            height: 40px;
+            border-radius: 5px;
+            color: whitesmoke;
+            background-color: rgb(224, 40, 40);
+            font-size: 18px;
+            border: none;
+            outline: none;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+
+        span{
+            color: lightgray;
+
+            strong{
+                color: white;
+            }
+        }
+      }
+    }
+
+    a{
+       color: white;
+        text-decoration: none;
+        font-size: 14px;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+    }
+
+  }
+  section{
+    max-width: 100vw;
+    background-color: rgb(54, 52, 52); 
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+    overflow-x:  hidden;
+
+    
+    .parent {
+      margin-left: 20px;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      grid-template-rows: repeat(5, 1fr);
+
+    .info {
+    padding: 0 15px;
+    border-right: 1px solid #ccc;
+   }
+
+   .info:last-child {
+    border-right: none;
+   }
+}
+
+    a{
+      color: white;
+    }
+
+  }
+  
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.checkbox-label {
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+
+ .upperPart {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    p {
+      color: white;
+      margin: 0;
+      font-size: 19px;
+    }
+    
+    small {
+      color: white;
+      font-size: 19px;
+    }
+  }
+
+  /* Media Query for Small Desktop */
+  @media screen and (max-width: 1024px) {
+    .top {
+      .wrapper {
+        padding: 20px 40px;
+        
+        .logo {
+          height: 35px;
+        }
+        
+        .loginButton {
+          padding: 5px 12px;
+          font-size: 14px;
+        }
+      }
+    }
+    
+    .container {
+      h3 {
+        font-size: 35px;
+      }
+      
+      h4 {
+        font-size: 18px;
+        margin: 15px;
+      }
+      
+      p {
+        font-size: 18px;
+      }
+      
+      .input {
+        width: 60%;
+        height: 45px;
+        
+        .getStarted {
+          font-size: 18px;
+        }
+      }
+    }
+}
+  
+@media screen and (max-width: 768px) {
+.top {
+  .wrapper {
+    padding: 15px 30px;
+        
+    .logo {
+      height: 30px;
+    }
+        
+    .loginButton {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+}
+    
+.container {
+  h3 {
+    font-size: 28px;
+  }
+      
+  h4 {
+    font-size: 16px;
+    margin: 12px;
+  }
+      
+  p {
+    font-size: 16px;
+    padding: 0 20px;
+    text-align: center;
+  }
+      
+  .input {
+    width: 70%;
+    height: 40px;
+        
+    .getStarted {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .top {
+      .wrapper {
+        padding: 10px 20px;
+        
+        .logo {
+          height: 25px;
+        }
+        
+        .loginButton {
+          padding: 4px 8px;
+          font-size: 10px;
+        }
+      }
+    }
+    
+    .container {
+      h3 {
+        font-size: 22px;
+        text-align: center;
+        padding: 0 15px;
+      }
+      
+      h4 {
+        font-size: 14px;
+        margin: 10px;
+        text-align: center;
+      }
+      
+      p {
+        font-size: 14px;
+        padding: 0 15px;
+      }
+      
+      .input {
+        width: 90%;
+        height: 40px;
+        flex-direction: column;
+        background: transparent;
+        
+        input {
+          width: 100%;
+          margin-bottom: 10px;
+          border-radius: 5px;
+        }
+        
+        .getStarted {
+          width: 100%;
+          font-size: 14px;
+          border-radius: 5px;
+        }
+      }
+      
+      form.input {
+        input {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  

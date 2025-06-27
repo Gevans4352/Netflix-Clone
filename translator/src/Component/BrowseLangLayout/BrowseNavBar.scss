@@ -1,0 +1,109 @@
+.BrowseNavBar {
+  background-color: rgba(0, 0, 0, 0.596);
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  z-index: 1000;
+  margin-top: 20px;
+  height: 68px;
+
+  .sections {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .fall {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .genre {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      .dropdown {
+        position: relative;
+
+        .label-span-group {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          label {
+            font-size: 0.9rem;
+            color: #b3b3b3;
+            text-transform: uppercase;
+            white-space: nowrap;
+          }
+
+          span {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: #fff;
+            border: 1px solid white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+          }
+        }
+
+        .triangle {
+          font-size: 0.8rem;
+        }
+
+        ul {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: #141414;
+          border: 1px solid #333;
+          border-radius: 4px;
+          padding: 0.5rem 0;
+          margin-top: 0.5rem;
+          min-width: 200px;
+          display: none;
+          z-index: 100;
+          max-height: 300px;
+          overflow-y: auto;
+
+          &.show {
+            display: block;
+          }
+
+          &::-webkit-scrollbar {
+            width: 8px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: #888;
+          }
+
+          &::-webkit-scrollbar-track {
+            background: #1f1f1f;
+          }
+
+          p {
+            padding: 0.5rem 1rem;
+
+            a {
+              color: white;
+              text-decoration: none;
+              display: block;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

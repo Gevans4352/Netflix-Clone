@@ -1,0 +1,130 @@
+.mainCollection{
+  width: 230px;
+  height: 260px;
+}
+
+.listWorth{
+    width: 225px;
+    height: 130px;
+    background-color: rgb(31, 30, 30);
+    overflow: hidden;
+
+    .mediasWorth{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    }
+
+    img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+  .action {
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+   }
+    .itemInfoWorth{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+    .iconsWorth{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+   .icon{
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    }
+   }  
+
+ }
+   &:hover{
+    width: 300px;
+    height: 300px;
+    transform: scale(1.05)  translateY(-5px);
+    z-index: 999;
+    box-shadow: 1px -4px 13px 2px rgba(36, 35, 35, 0.75);
+    -webkit-box-shadow: 1px -4px 13px 2px rgba(36, 35, 35, 0.75);
+    -moz-box-shadow: 1px -4px 13px 2px rgba(29, 28, 28, 0.75);
+    border-radius: 5px;
+    position: relative;
+  }
+  .itemWorthTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px;
+
+   span{
+    font-style: 2px;
+    font-family: 'Netflix Sans';
+    border-bottom: 10px;
+   }
+   .limit{
+    padding: 2px 2px;
+    border: 1px solid grey;   
+    }
+  }
+  .itemWorthTop{
+    font-size: 15px;
+
+  .tooltipWrapper{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    }
+  .tooltipText{
+    visibility: hidden;
+    opacity: 0;
+    width: max-content;
+    background-color: #f2f2f3;
+    color: #3d3a3a;
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 125%; 
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    z-index: 1;
+    }
+  .tooltipText::after{
+    content: '';
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 7px;
+    border-style: solid;
+    border-color: #f8f9fa transparent transparent transparent;
+    }
+  .tooltipWrapper:hover .tooltipText{
+    visibility: visible;
+    opacity: 1;
+    }
+  }
+  .Worthdesc{
+    font-size: 15px;
+    margin-top: 12px;
+    text-align: start;
+  }
+}

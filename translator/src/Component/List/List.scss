@@ -1,0 +1,47 @@
+.list {
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgba(7, 6, 6, 0.349);
+    
+    .listTitle {
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-weight: 500;
+      margin-left: 50px;
+    }
+    
+    .wrapper {
+        position: relative;
+        overflow: hidden;
+        .sliderArrow{
+      width: 50px;
+      height: 100px;
+      background-color: #0000001e;
+      color: white;
+      position: absolute;
+      z-index: 99;
+      top: 0; 
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+      margin-left: 0;
+
+            &.left{
+                left: 0;
+            }
+
+            &.right{
+                right: 0;
+            }
+        }
+      .container {
+        margin-left: 50px;
+        display: flex;
+        width: max-content;
+        margin-top: 10px;
+        transform: translateX(0px);
+        transition:  all 1s ease;
+    }
+   }
+}
+

@@ -1,0 +1,325 @@
+.newsPopular{
+  width: 100%;
+  padding-top: 70px;
+  background-color: rgba(7, 6, 6, 0.9333333333);
+
+  .newsPopularList{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .newToNetflix{
+    margin-left: 20px;
+  }
+
+  .wrapperThree{
+    position: relative;
+    overflow: hidden;
+
+
+    .sleederArrow{
+      width: 50px;
+      height: 100px;
+      background-color: #0000001e;
+      color: white;
+      position: absolute;
+      z-index: 99;
+      top: 0; 
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+      margin-left: 0;
+
+
+      &.left{
+        left: 0;
+      }
+
+      &.right{
+        right: 0;
+      }
+    }
+    .container{
+      display: flex;
+      margin-left: 40px;
+      width: max-content;
+      margin-top: 10px;
+      transition: transform 0.5s ease;
+      will-change: transform;
+    }
+  }
+}
+
+.nextWeek{
+  width: 100%;
+  background-color: rgba(7, 6, 6, 0.9333333333);
+
+  .nextWeekList{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .wrapperFive{
+    position: relative;
+    overflow: hidden;
+
+
+    .sladerArrow{
+      width: 50px;
+      height: 100px;
+      background-color: #0000001e;
+      color: white;
+      position: absolute;
+      z-index: 99;
+      top: 0; 
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+      margin-left: 0;
+
+
+      &.left{
+        left: 0;
+        margin: 20px;
+      }
+
+      &.right{
+        right: 0;
+        margin: 20px;
+      }
+    }
+    .container{
+      margin-left: 50px;
+      display: flex;
+      width: max-content;
+      margin-top: 10px;
+      transition: transform 0.5s ease;
+      will-change: transform;
+    }
+  }
+
+}
+
+.Showstop{
+  background-color: rgba(7, 6, 6, 0.9333333333);
+  width: 100%;
+  padding-top: 30px;
+
+  .topList{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+   .wrapperSeven{
+    position: relative;
+    overflow: hidden;
+
+
+    .idktbhtspmo {
+      width: 50px;
+      height: 100px;
+      background-color: #0000001e;
+      color: white;
+      position: absolute;
+      z-index: 99;
+      top: 0; 
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+      margin-left: 0;
+
+
+      &.left{
+        left: 0;
+          
+      }
+
+      &.right{
+        right: 0;
+          
+      }
+
+    }
+    .container{
+      display: flex;
+      width: max-content;
+      margin-top: 10px;
+      transition: transform 0.5s ease;
+      will-change: transform;
+    }
+  }
+
+
+}
+
+.nextWeek{
+  background-color: rgba(7, 6, 6, 0.9333333333);
+  width: 100%;
+  padding-top: 30px;
+
+
+   .nextWeekList{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+   .wrapperEight{
+    position: relative;
+    overflow: hidden;
+
+
+    .midnightFiction {
+      width: 50px;
+      height: 100px;
+      background-color: #0000001e;
+      color: white;
+      position: absolute;
+      z-index: 99;
+      top: 0; 
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+      margin-left: 0;
+
+
+      &.left{
+        left: 0;
+          margin: 20px;
+      }
+
+      &.right{
+        right: 0;
+          margin: 20px;
+      }
+
+    }
+    .container{
+      display: flex;
+      width: max-content;
+      margin-top: 10px;
+      transition: transform 0.5s ease;
+      will-change: transform;
+    }
+  }
+
+}
+
+.topShows{
+  background-color: rgba(7, 6, 6, 0.9333333333);
+  width: 100%;
+  padding-top: 30px;
+
+
+  .topShowsList{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .wrapperFour{
+    position: relative;
+    overflow: hidden;
+
+
+    .slideMeAway {
+      width: 50px;
+      height: 100px;
+      background-color: #0000001e;
+      color: white;
+      position: absolute;
+      z-index: 99;
+      top: 0; 
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+      margin-left: 0;
+
+
+      &.left{
+        left: 0;
+          
+      }
+
+      &.right{
+        right: 0;
+          
+      }
+
+    }
+    .container{
+      display: flex;
+      width: max-content;
+      margin-top: 10px;
+      transition: transform 0.5s ease;
+      will-change: transform;
+    }
+  }
+}
+
+.worthThewait{
+  background-color: rgba(7, 6, 6, 0.9333333333);
+  width: 100%;
+  padding-top: 30px;
+
+  .worthTheWaitList{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .wrapperSix{
+    position: relative;
+    overflow: hidden;
+
+    .pushMeAway {
+      width: 50px;
+      height: 100px;
+      background-color: #0000001e;
+      color: white;
+      position: absolute;
+      z-index: 99;
+      top: 0; 
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+      margin-left: 0;
+
+
+      &.left{
+        left: 0;
+          margin: 20px;
+      }
+
+      &.right{
+        right: 0;
+          margin: 20px;
+      }
+    }
+    .container{
+      margin-left: 50px;
+      display: flex;
+      width: max-content;
+      margin-top: 10px;
+      transition: transform 0.5s ease;
+      will-change: transform;
+    }
+
+  }
+}
+

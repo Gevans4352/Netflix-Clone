@@ -1,0 +1,165 @@
+.search-results-page {
+  padding: 4rem 4% 6rem;
+  color: #fff;
+  background-color: #141414;
+  min-height: 100vh;
+  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .results-count {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    display: block;
+  }
+
+  .results-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .result-card {
+    background-color: #181818;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+    &:hover {
+      transform: scale(1.05);
+      z-index: 1;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-image-container {
+      position: relative;
+      width: 100%;
+      padding-top: 150%; /* 2:3 aspect ratio */
+      overflow: hidden;
+      
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+      }
+    }
+
+    .card-text-content {
+      padding: 12px;
+      
+      h4 {
+        margin: 0 0 4px;
+        font-size: 16px;
+        font-weight: 500;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+      p {
+        margin: 0;
+        font-size: 14px;
+        color: #a3a3a3;
+      }
+    }
+    
+    &:hover img {
+      opacity: 0.8;
+    }
+  }
+
+  /* Remove these duplicate styles - they're conflicting */
+  /* .card-image, .card-details { ... } */
+
+  .no-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #aaa;
+      max-width: 500px;
+      line-height: 1.5;
+    }
+  }
+  
+}
+.emptySearch {
+  color: #fff;
+  text-align: center;
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 12rem;
+  background-color: rgba(20, 20, 20, 0.8);
+  border-radius: 8px;
+  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  
+}
+
+.emptySearch-title {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.emptySearch-suggestion-header {
+  font-weight: 500;
+  color: #d2d2d2;
+  display: block;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.emptySearch-list {
+  text-align: left;
+  margin: 1rem 0 0 1.5rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.emptySearch-item {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1rem;
+
+  &::before {
+    content: "•";
+    color: #e50914; 
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .emptySearch {
+    padding: 1.5rem;
+    margin: 2rem 1rem;
+  }
+  
+  .emptySearch-title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,80 @@
+.space {
+    background-color: rgba(0, 0, 0, 0.897);
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+
+
+  .profiles {
+    text-align: center;
+    width: 100%;
+
+    .info {
+      p {
+        color: whitesmoke;
+        font-size: 80px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+    }
+
+   .images {
+  display: flex;
+  justify-content: center;
+  gap: 40px; 
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+.profile-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+
+  .edit-icon {
+    position: absolute;
+     font-size: 10000px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    display: none;
+    z-index: 2;
+    pointer-events: none; 
+    
+    .pencil{
+       font-size: 70px;
+    }
+  }
+
+  .edit-icon {
+    display: block;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+   }
+  }
+}

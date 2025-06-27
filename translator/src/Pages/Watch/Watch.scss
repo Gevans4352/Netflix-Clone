@@ -1,0 +1,149 @@
+
+.tele{
+  width: 100%;
+  padding-top: 70px;
+  background-color: rgb(24, 23, 23);
+
+  .naminishard{
+    background-color: rgba(41, 40, 40, 0.37);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 60px;
+
+
+    span{
+        font-size: 30px;
+        text-align: start;
+        font-weight: 200;
+        color: aliceblue;
+
+    }
+  }
+  
+}
+
+.dets {
+  color: whitesmoke;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: 'Netflix Sans', Arial, sans-serif;
+  position: absolute;
+  text-align: start;
+  width: 35%;
+  left: 40px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 10px;
+  padding-left: 20px;
+
+  .logosh {
+    display: flex;
+    flex-direction: column;
+    
+    &-up {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      
+      img {
+        width: 40px;
+        height: auto;
+      }
+      
+      p {
+        font-size: 12px;
+        font-weight: bold;
+        color: #d3d3d3;
+      }
+    }
+    
+    .topic {
+      font-size: 100px;
+      font-weight: bold;
+      margin-top: 4px;
+    }
+  }
+  
+  p {
+    color: #ffffff;
+    font-size: 17px;
+    margin: 5px 0;
+  }
+  
+  h4 {
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 100;
+    margin: 5px 0;
+  }
+
+  .hideH5 {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+
+  .moveTopicDown {
+    transform: translateY(90px);
+    transition: transform 0.3s ease;
+  }
+
+  .logs{
+    transform: translateY(90px);
+    transition: transform 0.3s ease;
+  }
+
+  
+  .tea {
+    font-size: 14px;
+    line-height: 1.4;
+    display: block;
+  }
+}
+
+ .buttons{
+        display: flex;
+    button{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 400;
+        margin-right: 10px;
+        cursor: pointer;
+
+          &.get{
+                background-color: rgba(255, 255, 255, 0.767);
+                color: rgb(58, 56, 56);
+                transition: all 0.3s ease;
+
+            &:hover{
+                background-color: rgb(180, 180, 180);
+                transform: scale(1.05);
+            }
+        }
+
+             &.share{
+                background-color:  rgba(207, 205, 205, 0.747);
+                color: rgb(255, 255, 255);
+                transition: all 0.3s ease;
+
+            &:hover{
+                background-color: rgba(207, 205, 205, 0.623);
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.beninging{
+  background-color: black;
+}
+ 

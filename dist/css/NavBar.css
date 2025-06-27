@@ -1,0 +1,54 @@
+.navBar {
+  color: white;
+  background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.3), 50%);
+}
+.navBar.scrolled {
+  background-color: var(--main-color);
+}
+.navBar .container {
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.navBar .container .left {
+  display: flex;
+  align-items: center;
+}
+.navBar .container .left img {
+  height: 25px;
+  margin-right: 40px;
+}
+.navBar .container .left span {
+  margin-right: 25px;
+  cursor: pointer;
+}
+.navBar .container .right {
+  display: flex;
+  align-items: center;
+}
+.navBar .container .right .icon {
+  margin: 0px 15px;
+  cursor: pointer;
+}
+.navBar .container .right img {
+  border-radius: 5px;
+  object-fit: cover;
+  height: 25px;
+  width: 30px;
+  cursor: pointer;
+}
+.navBar .container .right .profile .options {
+  display: none;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+.navBar .container .right .profile span {
+  padding: 0px 10px;
+}
+.navBar .container .right .profile:hover .options {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}/*# sourceMappingURL=NavBar.css.map */

@@ -1,0 +1,99 @@
+.MyList {
+  width: 100%;
+  padding-top: 70px;
+  background-color: #181818;
+
+    .naminishardidk {
+  background-color:  #181818;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  padding: 20px 40px; 
+
+    span {
+      font-size: 2rem;
+      font-weight: 300;
+      color: #fff;
+      display: block;
+      font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      letter-spacing: 1px;
+    }
+  }
+
+  .newerList {
+    padding-top: 90px;
+
+    .wrapperNine {
+      padding: 2rem;
+      background-color: #141414;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      .empty-list-message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+
+        .empty {
+          color: #b3b3b3;
+          font-size: 1.4rem;
+          text-align: center;
+          font-weight: 300;
+        }
+      }
+
+      .myListItem {
+        width: 250px;
+        background-color: #222;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        img {
+          width: 100%;
+          height: 140px; // Shorter height for rectangle shape
+          object-fit: cover;
+        }
+
+        h3 {
+          font-size: 1.1rem;
+          color: #fff;
+          padding: 0.5rem 1rem;
+          margin: 0;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: #999;
+          padding: 0 1rem 1rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+

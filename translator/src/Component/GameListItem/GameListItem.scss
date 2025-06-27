@@ -1,0 +1,164 @@
+.sarang{
+  width: 168px;
+  height: 290px;
+}
+
+.gameItem{
+    margin-top: 10px;
+    width: 155px;
+    height: 155px;
+    background-color: rgb(31, 30, 30);
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    
+
+    .mediaWrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+
+  }
+ 
+
+//     img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     display: block;
+//     position: relative;
+//     z-index: 1;
+//     transition: transform 0.3s ease, box-shadow 0.3s ease;
+//    }
+
+   &:hover{
+    width: 300px;
+    height: 300px;
+    transform: scale(1.05)  translateY(-5px);
+    z-index: 10;
+    border-radius: 12px;
+    box-shadow: 10px 10px 5px 0px rgba(31,29,29,0.42);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(31,29,29,0.42);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(31,29,29,0.42);
+    object-fit: cover;
+
+
+
+
+
+
+
+  .action {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; 
+  pointer-events: none; 
+  transition: opacity 0.3s ease;
+
+    video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; 
+
+
+  
+  }
+   }
+
+
+
+
+}
+
+.itemInfo {
+    padding: 5px 5px;
+    margin-bottom: 5px;
+    
+    .itemInfoWrapper{
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+
+        .gameImage{
+
+
+            .playPic{
+                width: 60px;
+                height: 60px;
+                border-radius: 14px;
+                margin: 3px 3px;
+            }
+        }
+        .logoSection{
+            display: flex;
+            align-items: center;
+            
+
+            .netflixLogo{
+                width: 30px;
+                height: 30px;
+            }
+            span{
+                font-size: 12px;
+                
+            }
+        }
+    }
+
+    .gameName{
+        font-size: 19px;
+        font-family: 'Netflix Sans';
+    }
+
+    .buttonSection{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .infoBtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: rgb(233, 224, 224);
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+
+
+        .svgIcon{
+            color: black;
+            font-size: 20px;
+        }
+    }
+
+    .addBtn{
+        border-radius: 50%;
+        background-color: rgb(49, 49, 49);
+        padding: 5px 5px;
+        border: 1px solid grey;
+        color: rgb(77, 73, 73);
+        outline: none;
+        display: flex;
+        align-items: center;
+        font-style: 25px;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+}
+

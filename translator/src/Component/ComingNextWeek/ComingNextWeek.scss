@@ -1,0 +1,168 @@
+.mainac{
+  width: 230px;
+  height: 259px;
+}
+
+.nextItem{
+    width: 225px;
+    height: 130px;
+    background-color: rgb(31, 30, 30);
+    overflow: hidden;
+
+    .mediaNews{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    }
+
+    img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+
+    &:hover{
+    width: 300px;
+    height: 300px;
+    transform: scale(1.05)  translateY(-5px);
+    z-index: 999;
+    box-shadow: 1px -4px 13px 2px rgba(31, 30, 30, 0.75);
+    -webkit-box-shadow: 1px -4px 13px 2px rgba(37, 36, 36, 0.75);
+    -moz-box-shadow: 1px -4px 13px 2px rgba(29, 28, 28, 0.75);
+    position: relative;
+    }
+
+      .newsInfo{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        
+    .icons{
+        display: flex;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        justify-content: space-between;
+
+        .iconOne{
+            border: .5px solid whitesmoke;
+            background-color: white;
+            color: black;
+            padding: 5px;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: gray;
+            }
+        }
+        .iconTwo{
+            border: .5px solid rgb(65, 62, 62);
+            background-color: rgb(24, 24, 24);
+            color: rgb(255, 255, 255);
+            padding: 5px;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+
+            &:hover{
+                border: .5px solid rgb(214, 211, 211);
+            }
+        }
+    }
+    .itemInfoTop{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: gray;
+        span{
+          font-size: 12px;
+        }
+    }
+    .limit{
+        border: 1px solid grey;
+        padding: 1px 3px;
+        margin: 0 10px;
+    }
+    span{
+      font-size: 12px;
+    }
+    }
+    .desc{
+        font-size:13px;
+        margin-bottom: 10px;
+    }
+
+     .tooltipWrapper {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+    
+    .tooltipText {
+      visibility: hidden;
+      opacity: 0;
+      width: max-content;
+      background-color: #f2f2f3;
+      color: #3d3a3a;
+      text-align: center;
+      padding: 8px;
+      border-radius: 4px;
+      position: absolute;
+      bottom: 125%; 
+      left: 50%;
+      transform: translateX(-50%);
+      transition: opacity 0.3s;
+      z-index: 1;
+    }
+    
+    .tooltipText::after {
+      content: '';
+      position: absolute;
+      top: 100%; 
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 7px;
+      border-style: solid;
+      border-color: #f8f9fa transparent transparent transparent;
+    }
+    
+    .tooltipWrapper:hover .tooltipText {
+      visibility: visible;
+      opacity: 1;
+    }
+
+}
+
+.actionLet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; 
+  pointer-events: none; 
+  transition: opacity 0.3s ease;
+
+  video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; 
+  }
+   
+}
+
+
+
+
+
+
