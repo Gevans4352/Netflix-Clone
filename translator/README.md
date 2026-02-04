@@ -1,54 +1,52 @@
-# React + TypeScript + Vite
+# Netflix Clone (React + TypeScript + SCSS) 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Netflix-inspired frontend application built with **React**, **TypeScript**, and **SCSS**.  
+This project focuses on recreating the UI and layout of a modern streaming platform, practicing **component-based architecture**, **responsive design**, and **frontend development best practices**.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Skills Learned](#skills-learned)
+- [Future Improvements](#future-improvements)
+- [Links](#links)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Features
+- Component-based UI design with reusable components  
+- Netflix-style layout with banners, carousels, and navigation  
+- Responsive design for desktop and mobile devices  
+- SCSS for modular and maintainable styling  
+- Local media assets to focus on frontend structure and styling
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Tech Stack
+- React.js  
+- TypeScript  
+- SCSS  
+- HTML5 & CSS3  
+- Responsive Web Design  
+- Component-Based Architecture
+
+---
+
+## Skills Learned
+- Building reusable React + TypeScript components  
+- Managing layout with SCSS modules  
+- Styling complex UIs  
+- Implementing responsive designs  
+- Project structuring and organization
+  
+---
+
+## Future Improvements
+Integrate API for dynamic content
+Add advanced state management (e.g., Redux)
+Improve accessibility and SEO
+Implement user authentication and profiles
+
